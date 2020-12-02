@@ -38,7 +38,7 @@ word "shadow", you would do \code{bibjson.abstract:"shadow"}.
 Short-hand names are available for some fields. See
 \url{https://doaj.org/api/v1/docs#short_field_names} for more details. For
 example: \code{doi:10.3389/fpsyg.2013.00479}, \code{issn:1874-9496}, \code{license:CC-BY},
-and \code{title:hydrostatic pressure}
+and \verb{title:hydrostatic pressure}
 }
 
 \examples{
@@ -52,7 +52,7 @@ jaod_journal_search(query = "publisher:dove")
 
 # sorting
 out <- jaod_journal_search(query = "bibjson.keywords:heritage",
-  sort = "bibjson.oa_start.year:desc")
-out$results$bibjson.oa_start.year
+  sort = "bibjson.eissn:desc")
+out$results$bibjson.eissn
 }
 }
